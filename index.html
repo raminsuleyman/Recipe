@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RecipeS - Delicious Recipes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+    <h1 class="logo">RecipeS</h1>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+    <main>
+      <section class="categories">
+      <h2>Categories</h2>
+      <div class="category-list">
+        <div class="category" onclick="showCategory('breakfast')">
+          <img src="src/270533c8c0250b3b270a7aeb1b78aa6c.jpg" alt="Breakfast">
+          <p>Breakfast</p>
+        </div>
+        <div class="category" onclick="showCategory('lunch')">
+          <img src="src/c401742b280349d0ea1efe68591a8075.jpg" alt="Lunch">
+          <p>Lunch</p>
+        </div>
+        <div class="category" onclick="showCategory('vegan')">
+          <img src="src/f6722d18e21830912cc9b92c78efd611.jpg" alt="Vegan">
+          <p>Vegan</p>
+        </div>
+        <div class="category" onclick="showCategory('soup')">
+          <img src="src/62f2f7601db13f454eb72f28ff32623e.jpg" alt="Soup">
+          <p>Soup</p>
+        </div>
+        <div class="category" onclick="showCategory('meat')">
+          <img src="src/1eead88b3ce7bfcc98fc3a88a52e2db6.jpg" alt="Meat">
+          <p>Meat</p>
+        </div>
+        <div class="category" onclick="showCategory('dessert')">
+          <img src="src/fd7f1a829211d09249286cfba25b9cba.jpg" alt="Dessert">
+          <p>Dessert</p>
+        </div>
+      </div>
+    </section>
+        
+
+        <section>
+          <div class="h2-header">
+            <h2>Simple and Tasty Recipes</h2>          
+          </div>
+
+          <div class="h2-text">
+               <p>Cooking doesn’t have to be complicated,Sometimes the simplest recipes create the most delicious flavors.
+Here you’ll find quick, easy, and healthy meals that anyone can make at home.
+From breakfast ideas to cozy dinners, each recipe is designed to bring joy to your table.
+Our step-by-step guides help you cook confidently, even if you’re just starting out.
+Discover how simple ingredients can turn into something truly amazing.</p>
+          </div>
+          <section id="recipes" class="recipes">
+  <div class="recipe-list" id="breakfast">
+    <div class="recipe-card">
+      <img src="src/Strawberry-Pancakes-TIMG.jpg" alt="Breakfast 1">
+      <h3>Strawberry Pancakes</h3>
+      <p>Flour, eggs, milk, sugar, strawberries, butter</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/a35375d6a9bba46bf50cc371abdd4e52.jpg" alt="Breakfast 2">
+      <h3>Avocado Toast</h3>
+      <p>Bread, avocado, salt, pepper, lemon</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/1b765df3b026111b6a46afa07fc459b6.jpg" alt="Breakfast 3">
+      <h3>Cheese Omelette</h3>
+      <p>Eggs, cheese, butter, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/87045970c4c79dc77eb173ec28c96f35.jpg" alt="Breakfast 4">
+      <h3>Yogurt Bowl</h3>
+      <p>Yogurt, granola, honey, berries</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/58195ea33d7b4ba4ec02a69a8ab9a715.jpg" alt="Breakfast 5">
+      <h3>Berry Smoothie</h3>
+      <p>Mixed berries, banana, milk, honey</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/71013116d01e16bd26a290e9e66c4394.jpg" alt="Breakfast 6">
+      <h3>Oatmeal Bowl</h3>
+      <p>Oats, milk, banana, nuts, cinnamon</p>
+    </div>
+  </div>
+
+  <div class="recipe-list" id="lunch" style="display:none;">
+    <div class="recipe-card">
+      <img src="src/827a679fd2b8493cc48b7621efcd0826 (1).jpg" alt="Lunch 1">
+      <h3>Turkey & Avocado Sandwich</h3>
+      <p>Whole wheat bread, turkey breast, avocado, tomato, lettuce, mayonnaise, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/00e1353608adb7c91a179dc24ff6de3a.jpg" alt="Lunch 2">
+      <h3>Chicken Salad</h3>
+      <p>Chicken, lettuce, tomato, cucumber, olive oil, lemon, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/684ca1498560c84097bebc3805da551b.jpg" alt="Lunch 3">
+      <h3>Italian Pasta</h3>
+      <p>Spaghetti, ground beef, tomato sauce, onion, garlic, olive oil, herbs</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/fe72a93019c80777e4dbbc75efb4b7e4.jpg" alt="Lunch 4">
+      <h3>Club Sandwich</h3>
+      <p>Bread, turkey, bacon, lettuce, tomato, mayonnaise</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/8f866bd8fafbbd2b450fe40285b872e5.jpg" alt="Lunch 5">
+      <h3>Fish Tacos</h3>
+      <p>Tortilla, fish fillet, cabbage, lime, salsa, cilantro</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/00389ddab812fdc051465e0d21b83ee8.jpg" alt="Lunch 6">
+      <h3>Caesar Salad</h3>
+      <p>Romaine lettuce, chicken, parmesan, croutons, Caesar dressing</p>
+    </div>
+  </div>
+
+  <div class="recipe-list" id="vegan" style="display:none;">
+    <div class="recipe-card">
+      <img src="src/Buddha-bowl-salad-eade933.jpg" alt="Vegan 1">
+      <h3>Vegan Salad Bowl</h3>
+      <p>Quinoa, chickpeas, avocado, spinach, lemon, olive oil</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/ee94fbf8a73a01448d62fee7899e9d5e.jpg" alt="Vegan 2">
+      <h3>Vegan Burger</h3>
+      <p>Plant-based patty, bun, lettuce, tomato, vegan mayo</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/6960f5374e6b952038c31f1c17f66a39.jpg" alt="Vegan 3">
+      <h3>Tofu Stir Fry</h3>
+      <p>Tofu, bell pepper, broccoli, soy sauce, garlic, sesame oil</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/b777843975ddb856c5a11cb29d8a357b.jpg" alt="Vegan 4">
+      <h3>Vegan Wrap</h3>
+      <p>Tortilla, hummus, cucumber, lettuce, tomato, bell pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/f712998fa71e0cef732059bc4e287803.jpg" alt="Vegan 5">
+      <h3>Quinoa Salad</h3>
+      <p>Quinoa, spinach, cherry tomato, avocado, olive oil</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/d242cbbb8126da741a3ed65c288c636a.jpg" alt="Vegan 6">
+      <h3>Vegan Lentil Soup</h3>
+      <p>Lentils, carrot, onion, garlic, tomato paste, spices</p>
+    </div>
+  </div>
+
+  <div class="recipe-list" id="soup" style="display:none;">
+    <div class="recipe-card">
+      <img src="src/1bc8206a118252256b2a05fa9bbda922.jpg" alt="Soup 1">
+      <h3>Tomato Soup</h3>
+      <p>Tomato, onion, garlic, olive oil, cream, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/9e2d29f5b856c2b5996e3d3a6771f1b3.jpg" alt="Soup 2">S
+      <h3>Chicken Soup</h3>
+      <p>Chicken, carrot, celery, onion, garlic, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/47994c8ee6b15401d9a159fa25dac7bf.jpg" alt="Soup 3">
+      <h3>Mushroom Soup</h3>
+      <p>Mushroom, onion, garlic, cream, butter, herbs</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/9ea7c6a3e8014184c3dcfb0f3c637e6e.jpg" alt="Soup 4">
+      <h3>Pumpkin Soup</h3>
+      <p>Pumpkin, onion, garlic, cream, nutmeg, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/6f572145269f4dc070aa849110ae18ff.jpg" alt="Soup 5">
+      <h3>Lentil Soup</h3>
+      <p>Lentils, carrot, onion, garlic, tomato paste, spices</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/166e7769680cf5039240bc524fbaad1d.jpg" alt="Soup 6">
+      <h3>Broccoli Soup</h3>
+      <p>Broccoli, onion, garlic, cream, butter, salt, pepper</p>
+    </div>
+  </div>
+
+  <div class="recipe-list" id="meat" style="display:none;">
+    <div class="recipe-card">
+      <img src="src/353e1bf4da9e15d1c9c7d3973ef2baa2.jpg" alt="Meat 1">
+      <h3>Grilled Steak</h3>
+      <p>Beef steak, salt, pepper, garlic, herbs</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/e16c6abdb9e04596239436e47178c1cc.jpg" alt="Meat 2">
+      <h3>BBQ Chicken Wings</h3>
+      <p>Chicken wings, BBQ sauce, spices, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/e3413562952de11cdf0c27c690c9e7a8.jpg" alt="Meat 3">
+      <h3>Beef Stew</h3>
+      <p>Beef, carrot, potato, onion, garlic, broth, spices</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/b3257144daf01e8728fbb60f39f4451f.jpg" alt="Meat 4">
+      <h3>Lamb Chops</h3>
+      <p>Lamb chops, garlic, rosemary, olive oil, salt, pepper</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/104e240b8482b9dcc0e9028a17feb3b5.jpg" alt="Meat 5">
+      <h3>Italian Meatballs</h3>
+      <p>Ground beef, breadcrumbs, egg, tomato sauce, herbs</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/cf5f712da7d36797b971afc313890b6d.jpg" alt="Meat 6">
+      <h3>BBQ Ribs</h3>
+      <p>Pork ribs, BBQ sauce, brown sugar, spices</p>
+    </div>
+  </div>
+
+  <div class="recipe-list" id="dessert" style="display:none;">
+    <div class="recipe-card">
+      <img src="src/efcfd412c20d94fce33ecd5b28ae0bdc.jpg" alt="Dessert 1">
+      <h3>Chocolate Cake</h3>
+      <p>Flour, cocoa powder, sugar, eggs, butter</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/3f256c75a240ddf86e77e09b57c6c2d0.jpg" alt="Dessert 2">
+      <h3>Cheesecake</h3>
+      <p>Cream cheese, sugar, eggs, crust, vanilla,limon</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/fd9ec12ea9c0287f551537da3dc75605.jpg" alt="Dessert 3">
+      <h3>Fudge Brownie</h3>
+      <p>Chocolate, butter, sugar, eggs, flour</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/95b088b1c720cae1d4cf27afbcc82856.jpg" alt="Dessert 4">
+      <h3>Ice Cream Sundae</h3>
+      <p>Ice cream, chocolate sauce, nuts, whipped cream</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/bed02b606a1282caa0888afa4fa02156.jpg" alt="Dessert 5">
+      <h3>Chocolate Chip Cookies</h3>
+      <p>Flour, sugar, butter, chocolate chips, egg</p>
+    </div>
+    <div class="recipe-card">
+      <img src="src/a3e71d31e87999d9f53b226d48a46a43.jpg" alt="Dessert 6">
+      <h3>Vanilla Cupcake</h3>
+      <p>Flour, sugar, butter, eggs, vanilla, frosting</p>
+    </div>
+  </div>
+</section>     
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>About:</h3>
+      <p>Your ultimate destination for simple and tasty recipes. Cook with joy and share delicious meals with your loved ones.</p>
+    </div>
+    <div class="footer-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Recipes</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 RSipes. All Rights Reserved.</p>
+  </div>
+</footer>       
+
+    </main>
+</body>
+</html>
